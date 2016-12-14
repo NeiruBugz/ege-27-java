@@ -6,15 +6,19 @@ public class Solution
 
         Scanner sc = new Scanner(System.in);
 
-        int aMax = 10000;
-        int n = 6;
-        int a, b, max, min, d, s;
+        int aMax = 10000; // Ограничение
+        int n = 6; // Количество пар чисел
+        int a, b; // Пара чисел
+        int max; // Максимум в паре
+        int min; // Минимум в паре
+        int d; // Минимальная разница максимума и минимума не кратная трем
+        int s; // Сумма
 
         s = 0;
         d = aMax - 1;
 
-        for (int i = 0; i < n; i++) {
-            a = sc.nextInt();
+        for (int i = 0; i < n; i++) { /* Считываем пару чисел пока i меньше количества пар и прибавляем максимальное число*/
+            a = sc.nextInt();           к s */
             b = sc.nextInt();
             max = Math.max(a, b);
             min = Math.min(a, b);
